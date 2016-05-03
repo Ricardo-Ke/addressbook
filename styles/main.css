@@ -208,3 +208,14 @@ form span {
 .errColor {
 	color: red;
 }
+
+.successTip {
+	color: rgb(96, 32, 28);
+	font-size: 2.5rem;
+	margin-top: 45%;
+	text-align: center;
+}
+
+#content ul li {
+	list-style: none;
+}

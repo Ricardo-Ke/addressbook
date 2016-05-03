@@ -38,7 +38,7 @@ function addNameVerify() {
 		var re = new RegExp('^[\\u4e00-\\u9fa5]{0,}$');
 		// var isRight = re.test(this.value);
 		var isRight = this.value.match(re);
-		if (!isRight) {
+		if (!isRight || this.value == '') {
 			nameTip.innerHTML = '*不对哦';
 			nameTip.className = 'errColor';
 		}else {
@@ -74,7 +74,7 @@ function addCityVerify() {
 	cityInput.onblur = function() {
 		var re = new RegExp('^[\\u4e00-\\u9fa5]{0,}$');
 		var isRight = this.value.match(re);
-		if (!isRight) {
+		if (!isRight || this.value == '') {
 			cityTip.innerHTML = '*有问题哦';
 			cityTip.className = 'errColor';
 		}else {
